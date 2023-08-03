@@ -80,6 +80,7 @@ const Review = ({ id }) => {
     }
     useEffect(() => {
         async function getData() {
+            setData([])
             setloader(true)
             let q = query(reviewref, where('animeid', '==', id))
             const querySnapShot = await getDocs(q)
