@@ -25,7 +25,7 @@ const Cards = () => {
 
 
     return (
-        <div className='flex flex-wrap justify-between p-3 mt-2 '>
+        <div className='flex flex-wrap justify-center md:justify-between p-3 mt-2 '>
             {loading ? <div className='w-full flex justify-center items-center h-96'><Watch height="80"
                 width="80"
                 radius="48"

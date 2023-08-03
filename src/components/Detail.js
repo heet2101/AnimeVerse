@@ -36,8 +36,8 @@ const Detail = () => {
         <>
           <img className='h-96 block md:sticky top-24' src={data.img_link} />
           <div className='md:ml-4 ml-0 w-full md:w-1/2'>
-            <h1 className='text-3xl font-bold text-white '>({data.title})<span className='text-xl'>{data.year}</span></h1>
-            <h1 className='text-l mt-3 text-white'>IMDB rating:({data.IMDB_rating})</h1>
+            <h1 className='text-3xl font-bold text-white '>{data.title}<span className='text-xl'>({data.year})</span></h1>
+            <h1 className='text-l mt-3 text-white'>IMDB rating:  <span className='font-bold'>{`(${data.IMDB_rating})`}</span></h1>
             <h1 className='flex items-center mt-3'><span className='text-white mr-2'>User Rating :</span>
               <ReactStars
                 size={25}
@@ -47,7 +47,7 @@ const Detail = () => {
             <p className='mt-3'>{data.about}</p>
             <hr className='mt-5'></hr>
 
-            <Review id={id}/>
+            <Review id={id} />
           </div>
 
         </>}

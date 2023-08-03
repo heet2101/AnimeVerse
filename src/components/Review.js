@@ -118,7 +118,7 @@ const Review = ({ id }) => {
                 <div className='mt-4'>
                     {data.map((e, i) => {
                         return (
-                            <div className='p-2 w-full  border-grey-500 header mt-2'>
+                            <div className='p-2 w-full border-b md:border-none  border-grey-500 header mt-2'>
                                 <div className='flex items-center'>
                                     <p className='text-blue-500'>{e.name}</p>
                                     <p className='ml-3 text-xs'>({new Date(e.timestamp).toLocaleString()})</p>
