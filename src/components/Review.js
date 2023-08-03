@@ -115,7 +115,7 @@ const Review = ({ id }) => {
                 {loading ? <TailSpin height={25} color="white" /> : 'Share'}
             </button>
             {loader ? <div className='mt-6 flex justify-center'><ThreeDots color='white' height={10} /></div> :
-                <div className='mt-4'>
+                <div className='mt-4 border-t'>
                     {data.map((e, i) => {
                         return (
                             <div className='p-2 w-full border-b md:border-none  border-grey-500 header mt-2'>
